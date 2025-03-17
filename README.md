@@ -38,7 +38,7 @@ We welcome contributions! To get started:
 4. Push to your branch and create a pull request.
 
 ## 📧 Contact
-For any queries or suggestions, reach out at [your-email@example.com](mailto:your-email@example.com).
+For any queries or suggestions, reach out at [your-email@example.com](manojkumar15ns@gmail.com).
 
 🌿 **Together, let's make refilling a habit!**
 
