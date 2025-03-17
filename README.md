@@ -1,6 +1,6 @@
 # Eco-Refill
 
-![Eco-Refill](https://eco-refill.vercel.app/logo.png)  
+![Eco-Refill](https://eco-refill.vercel.app/)  
 A sustainable solution for reducing plastic waste through eco-friendly refilling stations.
 
 ## 🌍 Live Website
