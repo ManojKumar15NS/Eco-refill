@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Impact - EcoVend</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="floating-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="EcoVend Logo">
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="innovation.html">Innovation</a>
+                <a href="impact.html">Impact</a>
+                <a href="solutions.html">Solutions</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="contact.html" class="cta-button">Join Revolution</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Impact Hero Section -->
+    <section class="impact-hero">
+        <div class="hero-video-wrapper">
+            <video autoplay loop muted playsinline class="hero-video">
+                <source src="assets/video/ocean-plastic.mp4" type="video/mp4">
+            </video>
+            <div class="gradient-overlay"></div>
+        </div>
+        <div class="hero-content" data-aos="fade-up">
+            <h1 class="animated-heading">
+                <span class="gradient-text">Making an</span>
+                <span class="typing-text">Impact Together</span>
+            </h1>
+            <p class="hero-description">Every refill makes a difference. See how your choices shape our planet's future.</p>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <span class="gradient-text">The Impact of</span> Your Choice
+            </h2>
+            
+            <div class="comparison-cards">
+                <div class="comparison-card refill" data-aos="fade-right">
+                    <div class="card-header">
+                        <i class="fas fa-recycle"></i>
+                        <h3>When You Refill</h3>
+                    </div>
+                    <div class="impact-stats">
+                        <div class="stat-item positive">
+                            <span class="stat-number">-80%</span>
+                            <p>Carbon Footprint</p>
+                        </div>
+                        <div class="stat-item positive">
+                            <span class="stat-number">₹500</span>
+                            <p>Monthly Savings</p>
+                        </div>
+                        <div class="stat-item positive">
+                            <span class="stat-number">12</span>
+                            <p>Bottles Saved Monthly</p>
+                        </div>
+                    </div>
+                    <div class="environmental-benefits">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Zero plastic waste</li>
+                            <li><i class="fas fa-check"></i> Reduced carbon emissions</li>
+                            <li><i class="fas fa-check"></i> Lower transportation impact</li>
+                            <li><i class="fas fa-check"></i> Support circular economy</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="comparison-card single-use" data-aos="fade-left">
+                    <div class="card-header">
+                        <i class="fas fa-trash"></i>
+                        <h3>Single-Use Impact</h3>
+                    </div>
+                    <div class="impact-stats negative">
+                        <div class="stat-item">
+                            <span class="stat-number">450</span>
+                            <p>Years to Decompose</p>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">40%</span>
+                            <p>Ocean Plastic from Bottles</p>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1M+</span>
+                            <p>Bottles Bought Per Minute</p>
+                        </div>
+                    </div>
+                    <div class="environmental-impact">
+                        <ul>
+                            <li><i class="fas fa-times"></i> Contributes to landfill</li>
+                            <li><i class="fas fa-times"></i> Harms marine life</li>
+                            <li><i class="fas fa-times"></i> Higher carbon footprint</li>
+                            <li><i class="fas fa-times"></i> Wastes resources</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Impact Calculator -->
+    <section class="calculator-section">
+        <div class="container">
+            <div class="calculator-wrapper" data-aos="fade-up">
+                <h2 class="section-title">Calculate Your Impact</h2>
+                <div class="calculator-grid">
+                    <div class="calculator-input">
+                        <label>Monthly Bottle Usage</label>
+                        <input type="range" min="1" max="50" value="12" id="bottleRange">
+                        <span id="bottleCount">12 bottles</span>
+                    </div>
+                    <div class="calculator-results">
+                        <div class="result-item">
+                            <span class="result-label">Plastic Saved Yearly</span>
+                            <span class="result-value" id="plasticSaved">3.6 kg</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Money Saved Yearly</span>
+                            <span class="result-value" id="moneySaved">₹6,000</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">CO2 Reduced</span>
+                            <span class="result-value" id="co2Reduced">24 kg</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Impact Visualization -->
+    <section class="global-impact">
+        <div class="container">
+            <div class="impact-visualization" data-aos="zoom-in">
+                <div class="ocean-graphic">
+                    <div class="wave-animation"></div>
+                    <div class="impact-counter">
+                        <span class="counter-number">50,000+</span>
+                        <span class="counter-label">Bottles Saved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action 
+    <section class="impact-cta">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Start Making an Impact Today</h2>
+                <p>Join thousands of others in reducing plastic waste through smart refills.</p>
+                <div class="cta-buttons">
+                    <a href="#locations" class="primary-btn">Find Refill Station</a>
+                    <a href="#learn" class="secondary-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!-- Call to Action Section -->
+<section class="impact-cta">
+    <div class="container">
+        <div class="cta-wrapper glass-effect" data-aos="fade-up">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2 class="section-title">
+                        <span class="gradient-text">Start Making</span> 
+                        an Impact Today
+                    </h2>
+                    <p>Join thousands of others in reducing plastic waste through smart refills.</p>
+                </div>
+                <div class="cta-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Bottles Saved</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">₹500</span>
+                        <span class="stat-label">Average Savings</span>
+                    </div>
+                </div>
+                <div class="cta-actions">
+                    <a href="#locations" class="primary-btn">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Find Refill Station
+                    </a>
+                    <a href="#learn" class="secondary-btn">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer (Same as index) -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#enquire">Enquire Now</a></li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+      
+                <!-- Legal -->
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms & Conditions</a></li>
+                        <li><a href="#refund">Return, Refund & Cancellation Policy</a></li>
+                    </ul>
+                </div>
+      
+                <!-- Our Offerings -->
+                <div class="footer-column">
+                    <h3>Our Offerings</h3>
+                    <ul>
+                        <li><a href="#beverage">Beverage Vending Machine</a></li>
+                        <li><a href="#food">Healthy Food Vending Machine</a></li>
+                        <li><a href="#automatic">Automatic Vending Machine</a></li>
+                        <li><a href="#smart">Smart Vending Machine</a></li>
+                        <li><a href="#buy">Buy Vending Machine In India</a></li>
+                        <li><a href="#operators">Vending Machine Operators</a></li>
+                        <li><a href="#rent">Vending Machine On Rent</a></li>
+                        <li><a href="#snack">Snack Vending Machine On Rent</a></li>
+                    </ul>
+                </div>
+      
+                <!-- Contact -->
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <address>
+                        L2/210, The Summit Business Bay,<br>
+                        1<sup>st</sup> Floor,<br>
+                        Sant Janabai Marg,<br>
+                        Vile Parle (E),<br>
+                        Mumbai 400 057, India.
+                    </address>
+                    <a href="#directions" class="direction-link">Get Directions</a>
+                    
+                    <!-- <div class="app-download">
+                        <h4>Download our App to get Instant Nourishment</h4>
+                        <div class="app-buttons">
+                            <a href="#" class="app-btn">
+                                <img src="assets/images/google-play.png" alt="Get it on Google Play">
+                            </a>
+                            <a href="#" class="app-btn">
+                                <img src="assets/images/app-store.png" alt="Download on App Store">
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+      </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Calculator functionality
+        const bottleRange = document.getElementById('bottleRange');
+        const bottleCount = document.getElementById('bottleCount');
+        const plasticSaved = document.getElementById('plasticSaved');
+        const moneySaved = document.getElementById('moneySaved');
+        const co2Reduced = document.getElementById('co2Reduced');
+
+        bottleRange.addEventListener('input', updateCalculator);
+
+        function updateCalculator() {
+            const bottles = bottleRange.value;
+            bottleCount.textContent = `${bottles} bottles`;
+            plasticSaved.textContent = `${(bottles * 0.3).toFixed(1)} kg`;
+            moneySaved.textContent = `₹${(bottles * 500).toLocaleString()}`;
+            co2Reduced.textContent = `${(bottles * 2).toFixed(1)} kg`;
+        }
+    </script>
+</body>
+</html> 
